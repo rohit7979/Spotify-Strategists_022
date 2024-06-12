@@ -1,314 +1,402 @@
-
 body {
-    font-family: sans-serif;
-  }
+  font-family: sans-serif;
+}
 
-  .container {
-    max-width: 1296px;
-    width: 100%;
-    margin: auto;
-  }
+.container {
+  max-width: 1296px;
+  width: 100%;
+  margin: auto;
+}
 
 /* <!-- rohit section start --> */
 
 
-  .st-container {
-    max-width: 1600px;
-    width: 100%;
-    margin: auto;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  #st-navP1 > div > span {
-    padding: 8px;
-    cursor: pointer;
-  }
-  
-  #st-navP1 {
-    gap: 20px;
-    font-family: Arial;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    border-bottom: 1px solid #e3e3e3;
-  }
-  
-  #st-navP1 > div:nth-of-type(1) span > img {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-  }
-  
-  #st-navP1 > div:nth-of-type(1) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #st-navP1 > div:nth-of-type(2) > span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  #st-navP1 > div > span:hover {
-    text-decoration: underline;
-  }
-  
-  #st-navP2 {
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  #st-navP2 > div:nth-of-type(1) > a {
-    margin: 15px;
-    font-size: 14px;
-  }
-  
-  #st-navP2 > div:nth-of-type(1) > a:hover {
-    text-decoration: underline;
-  }
-  
-  #st-navP2 > div:nth-of-type(3) > a:hover {
-    text-decoration: underline;
-  }
-  
-  #st-navP2 > div:nth-of-type(2) > a {
-    font-size: 38px;
-    font-weight: 1000;
-    cursor: default;
-    position: absolute;
-    right: 47%;
-    top: 8%;
-  }
-  
-  #st-navP2 > div:nth-of-type(3) > a {
-    margin: 15px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    gap: 5px;
-  }
-  
-  #st-navP2 > div:nth-of-type(3) > span {
-    margin: 15px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    gap: 5px;
-    cursor: pointer;
-  }
-  
-  #st-navP3 > div {
-    margin-top: 15px;
-    margin: 15px;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-    justify-content: space-between;
-  }
-  
-  #st-navP3 > div > div > a {
-    text-transform: uppercase;
-    font-family: Arial, sans-serif;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  #st-navP3 > div > div > a:hover {
-    text-decoration: underline;
-  }
-  
-  #st-navP3 > div > div > div > div > img:hover {
-    opacity: 0.4;
-  }
-  
-  .st-content > div {
-    display: flex;
-    margin-top: 5px;
-    flex-direction: column;
-    padding: 15px;
-  }
-  
-  .st-content > div > span {
-    margin-bottom: 10px;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    padding: 8px;
-  }
-  
-  .st-content > div > a {
-    padding: 5px;
-    text-transform: capitalize;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: Arial, sans-serif;
-  }
-  
-  #st-button {
-    padding: 8px;
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  #searchname {
-    border: none;
-  }
-  #span {
-    border-bottom: 1px solid grey;
-    padding-bottom: 4px;
-  }
-  .st-button {
-    padding: 10px;
-    border: none;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  
-  .st-button:hover {
-    transform: scale(1.1);
-  }
-  
-  .st-content > div > a:hover {
-    text-decoration: underline;
-  }
-  
-  .st-newDD {
-    display: none;
-  }
-  
-  .st-designersDD {
-    display: none;
-    
-  }
-  .st-designersDD1{
-   max-width: 200px;
-   max-height: 279px;
-  }
-  
-  .st-clothingDD {
-    display: none;
-  }
-  
-  .st-dressesDD {
-    display: none;
-  }
-  
-  .st-shoesDD {
-    display: none;
-  }
-  
-  .st-bagsDD {
-    display: none;
-  }
-  
-  .st-accessoriesDD {
-    display: none;
-  }
-  
-  .st-beautyDD {
-    display: none;
-  }
-  
-  .st-shopsDD {
-    display: none;
-  }
-  
-  .st-kendallDD {
-    display: none;
-  }
-  
-  .st-dropdown .st-content {
-    background-color: white;
-    position: absolute;
-    transition: display 1s ease;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  }
-  
-  .st-dropdown > :hover .st-newDD {
-    display: flex;
-  }
-  
-  .st-dropdown > :hover .st-designersDD {
-    display: flex;
-  }
-  
-  .st-dropdown > :hover .st-clothingDD {
-    display: flex;
-  }
-  
-  .st-dropdown > :hover .st-dressesDD {
-    display: flex;
-  }
-  
-  .st-dropdown > :hover .st-shoesDD {
-    display: flex;
-  }
-  
-  .st-dropdown > :hover .st-bagsDD {
-    display: flex;
-  }
-  
-  .st-dropdown > :hover .st-accessoriesDD {
-    display: flex;
-  }
-  
-  .st-dropdown > :hover .st-beautyDD {
-    display: flex;
-    left: 40%;
-    transition: 1s ease;
-  }
-  
-  .st-dropdown > :hover .st-shopsDD {
-    display: flex;
-    left: 40%;
-  }
-  
-  .st-dropdown > :hover .st-kendallDD {
-    display: flex;
-    left: 55%;
-  }
-  
+.st-container {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#st-navP1>div>span {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#st-navP1 {
+  gap: 20px;
+  font-family: Arial;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+#st-navP1>div:nth-of-type(1) span>img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+#st-navP1>div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#st-navP1>div:nth-of-type(2)>span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+#st-navP1>div>span:hover {
+  text-decoration: underline;
+}
+
+#st-navP2 {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#st-navP2>div:nth-of-type(1)>a {
+  margin: 15px;
+  font-size: 14px;
+}
+
+#st-navP2>div:nth-of-type(1)>a:hover {
+  text-decoration: underline;
+}
+
+#st-navP2>div:nth-of-type(3)>a:hover {
+  text-decoration: underline;
+}
+
+#st-navP2>div:nth-of-type(2)>a {
+  font-size: 38px;
+  font-weight: 1000;
+  cursor: default;
+  position: absolute;
+  right: 47%;
+  top: 8%;
+}
+
+#st-navP2>div:nth-of-type(3)>a {
+  margin: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  gap: 5px;
+}
+
+#st-navP2>div:nth-of-type(3)>span {
+  margin: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+#st-navP3>div {
+  margin-top: 15px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+#st-navP3>div>div>a {
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#st-navP3>div>div>a:hover {
+  text-decoration: underline;
+}
+
+#st-navP3>div>div>div>div>img:hover {
+  opacity: 0.4;
+}
+
+.st-content>div {
+  display: flex;
+  margin-top: 5px;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.st-content>div>span {
+  margin-bottom: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.st-content>div>a {
+  padding: 5px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+}
+
+#st-button {
+  padding: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#searchname {
+  border: none;
+}
+
+#span {
+  border-bottom: 1px solid grey;
+  padding-bottom: 4px;
+}
+
+.st-button {
+  padding: 10px;
+  border: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.st-button:hover {
+  transform: scale(1.1);
+}
+
+.st-content>div>a:hover {
+  text-decoration: underline;
+}
+
+.st-newDD {
+  display: none;
+}
+
+.st-designersDD {
+  display: none;
+
+}
+
+.st-designersDD1 {
+  max-width: 200px;
+  max-height: 279px;
+}
+
+.st-clothingDD {
+  display: none;
+}
+
+.st-dressesDD {
+  display: none;
+}
+
+.st-shoesDD {
+  display: none;
+}
+
+.st-bagsDD {
+  display: none;
+}
+
+.st-accessoriesDD {
+  display: none;
+}
+
+.st-beautyDD {
+  display: none;
+}
+
+.st-shopsDD {
+  display: none;
+}
+
+.st-kendallDD {
+  display: none;
+}
+
+.st-dropdown .st-content {
+  background-color: white;
+  position: absolute;
+  transition: display 1s ease;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.st-dropdown> :hover .st-newDD {
+  display: flex;
+}
+
+.st-dropdown> :hover .st-designersDD {
+  display: flex;
+}
+
+.st-dropdown> :hover .st-clothingDD {
+  display: flex;
+}
+
+.st-dropdown> :hover .st-dressesDD {
+  display: flex;
+}
+
+.st-dropdown> :hover .st-shoesDD {
+  display: flex;
+}
+
+.st-dropdown> :hover .st-bagsDD {
+  display: flex;
+}
+
+.st-dropdown> :hover .st-accessoriesDD {
+  display: flex;
+}
+
+.st-dropdown> :hover .st-beautyDD {
+  display: flex;
+  left: 40%;
+  transition: 1s ease;
+}
+
+.st-dropdown> :hover .st-shopsDD {
+  display: flex;
+  left: 40%;
+}
+
+.st-dropdown> :hover .st-kendallDD {
+  display: flex;
+  left: 55%;
+}
+
 
 
 /* <!-- rohit section end --> */
 
 
- /* <!-- rutvik section start --> */
+/* <!-- rutvik section start --> */
 
 
 
 /* <!-- rutvik section end --> */
 
 
- /* <!-- syed section start --> */
+/* <!-- syed section start --> */
 
 
 
 /* <!-- syed section end --> */
 
 
- /* <!-- arnab section start --> */
+/* <!-- arnab section start --> */
 
 
 
 /* <!-- arnab section end --> */
 
 
- /* <!-- rakesh footer section start --> */
+/* <!-- rakesh footer section start --> */
+#footersection1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #f3e7e0;
+  font-family: sans-serif;
+}
+
+#footersection1>h5:nth-child(1) {
+  font-weight: 500;
+}
+
+#footersection1>p:nth-child(2) {
+  font-size: 13.5px;
+}
+
+#footersection1 a {
+  color: black;
+  font-size: 16px;
+}
+
+#footersection2 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+#divsect1 {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+#divsect2 {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+#divsect2 p{
+  margin-top: 38px;
+}
+
+#divsect3 {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  gap: 7px;
+}
+#divsect3 p{
+  margin-top: 0px;
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#divsect3 input {
+  padding: 10px;
+  margin-top: 10px;
+  width: 320px;
+  font-size: 14px;
+}
+
+#divsect4 {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+#divsect5 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#lastpara {
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: gray;
+}
 
 
 
