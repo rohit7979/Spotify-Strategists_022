@@ -318,7 +318,21 @@ body {
 
 /* <!-- syed section start --> */
 
-
+#rpCard2 {
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1em;
+  gap: 1.2%;
+}
+#Card2R img{
+  width: 100%;
+  height: 100%;
+} 
+.fahad-img{
+  max-width: 362px;
+  max-height: 458px;
+}
 
 /* <!-- syed section end --> */
 
