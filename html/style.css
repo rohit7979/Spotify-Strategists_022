@@ -290,6 +290,14 @@ body {
 /* <!-- rohit section end --> */
 
 
+#MainR {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
 /* <!-- rutvik section start --> */
 
 
