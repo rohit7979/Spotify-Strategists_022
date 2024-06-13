@@ -471,7 +471,33 @@ a {
   font-size: 12px;
   color: gray;
 }
-
-
+#kendallMain img {
+  margin-bottom: 15px;
+}
+#kendallHeadings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#kendallHeadings > p:nth-child(1) {
+  font-weight: 550;
+  font-size: 33px;
+  margin-bottom: 0px;
+  letter-spacing: 1.5px;
+}
+#kendallHeadings > p:nth-child(2) {
+  font-weight: 800px;
+  font-size: 27px;
+  letter-spacing: 1.5px;
+}
+#ra1 {
+  max-width: 1296px;
+  padding: 13px;
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
 
 /* <!-- rakesh footerd section end -->  */
