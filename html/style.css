@@ -319,7 +319,6 @@ body {
 /* <!-- syed section start --> */
 
 #rpCard2 {
-  /* border: 2px solid black; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1em;
@@ -333,13 +332,41 @@ body {
   max-width: 362px;
   max-height: 458px;
 }
+#rpCard2 div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rpCard2 p{
+  text-align: center;
+  font-size: 1em;
+}
 
 /* <!-- syed section end --> */
 
 
 /* <!-- arnab section start --> */
+#RCard-heading3 {
+  text-align: center;
+  padding: 1em;
+}
 
+#Card3RP {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
+#Card3RP div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Card3RP p{
+  text-align: center;
+  font-size: 1em;
+}
 
 /* <!-- arnab section end --> */
 
