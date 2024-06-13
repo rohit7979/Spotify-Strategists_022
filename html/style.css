@@ -355,6 +355,8 @@ body {
 #Card3RP {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #Card3RP div{
@@ -363,9 +365,21 @@ body {
   align-items: center;
 }
 
+#Card3RP img{
+  max-width: 362px;
+  max-height: 458px;
+}
+
+#Card3RP h4{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 #Card3RP p{
   text-align: center;
   font-size: 1em;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /* <!-- arnab section end --> */
