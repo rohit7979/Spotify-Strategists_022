@@ -475,3 +475,91 @@ a {
 
 
 /* <!-- rakesh footerd section end -->  */
+
+
+
+/* sign in css */
+#masignin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 0px 100px;
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+#masignin p {
+  font-size: 40px;
+  font-weight: bolder;
+}
+#maforms {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 40px;
+}
+#masignin1 {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  gap: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  gap: 18px;
+}
+
+input {
+  padding: 10px;
+}
+
+#masmall {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#maradios {
+  display: flex;
+  gap: 20px;
+}
+
+#map1,
+#map1 ~ ul {
+  margin: 0px;
+  font-size: 12px;
+}
+#malistul > li {
+  margin-left: -30px;
+  margin-bottom: 5px;
+}
+.mabtn {
+  background-color: black;
+  color: white;
+  padding: 17px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#materms {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.maclr {
+  color: red;
+  text-decoration: underline;
+}
+#mabox {
+  font-size: 13px;
+}
+#mabox2 {
+  display: block;
+  gap: 5px;
+}
+
+/* sign in css end */
