@@ -563,3 +563,50 @@ input {
 }
 
 /* sign in css end */
+
+/* designer section by Rutvik Start */
+
+#deepMain {
+  margin: 50px 0 50px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#deepSideBar {
+  flex: 2;
+
+  display: flex;
+  flex-direction: column;
+  
+  align-self: flex-start;
+  gap: 10px;
+}
+
+#deepSideBar > a,
+#deepSideBar > h4 {
+  padding-left: 10%;
+}
+
+#deepSideBar > a:hover {
+  text-decoration: underline;
+}
+
+#deepDesigner {
+  flex: 8;
+}
+
+.deepContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.deepContainer > p {
+  flex-basis: calc(33.33% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.deepContainer > p > span {
+  padding-right: 5px;
+}
+/* Designer section by Rutvik End */
