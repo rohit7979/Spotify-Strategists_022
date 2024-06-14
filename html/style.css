@@ -79,9 +79,7 @@ body {
   font-size: 38px;
   font-weight: 1000;
   cursor: default;
-  position: absolute;
-  right: 47%;
-  top: 8%;
+  margin-left: 16rem;
 }
 
 #st-navP2 > div:nth-of-type(3) > a {
@@ -356,17 +354,17 @@ body {
   align-items: center;
 }
 
-#Card3RP img{
+#Card3RP img {
   max-width: 362px;
   max-height: 458px;
 }
 
-#Card3RP h4{
+#Card3RP h4 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-#Card3RP p{
+#Card3RP p {
   text-align: center;
   font-size: 1em;
   margin-top: 5px;
@@ -556,8 +554,6 @@ a {
 
 /* <!-- rakesh footerd section end -->  */
 
-
-
 /* sign in css */
 #masignin {
   display: flex;
@@ -657,7 +653,7 @@ input {
 
   display: flex;
   flex-direction: column;
-  
+
   align-self: flex-start;
   gap: 10px;
 }
