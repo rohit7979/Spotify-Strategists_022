@@ -154,38 +154,10 @@
       "id": "1844",
       "usermail": "rebel@gmail.com",
       "password": "12345",
-      "cart": [
-        {
-          "id": "1",
-          "image": "https://is4.fwrdassets.com/images/p/fw/p/NOMF-WD478_V1.jpg",
-          "designer": "Norma Kamali",
-          "title": "Strapless Bill Pickleball Dress",
-          "price": 32833,
-          "category": "clothing"
-        },
-        {
-          "id": "1",
-          "image": "https://is4.fwrdassets.com/images/p/fw/p/NOMF-WD478_V1.jpg",
-          "designer": "Norma Kamali",
-          "title": "Strapless Bill Pickleball Dress",
-          "price": 32833,
-          "category": "clothing"
-        }
-      ],
-      "mydesigners": [
-        "A'MMONDE ATELIER"
-      ],
-      "isloggedin": true,
-      "wishlist": [
-        {
-          "id": "2",
-          "image": "https://is4.fwrdassets.com/images/p/fw/p/RTFF-WP31_V1.jpg",
-          "designer": "retrofete",
-          "title": "Danica Pant",
-          "price": 24520,
-          "category": "clothing"
-        }
-      ]
+      "cart": [],
+      "mydesigners": [],
+      "isloggedin": false,
+      "wishlist": []
     },
     {
       "id": "ddc5",
@@ -215,13 +187,13 @@
       "wishlist": []
     },
     {
-      "usermail": "rakeshrodda@gmail.com",
+      "id": "1778",
+      "usermail": "dc@gmail.com",
       "password": "1234",
       "cart": [],
       "mydesigners": [],
       "isloggedin": false,
-      "wishlist": [],
-      "id": "xd5GZVX"
+      "wishlist": []
     }
   ],
   "data": [
