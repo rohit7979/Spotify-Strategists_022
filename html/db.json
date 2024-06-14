@@ -158,6 +158,15 @@
       "mydesigners": [],
       "isloggedin": false,
       "wishlist": []
+    },
+    {
+      "id": "ddc5",
+      "usermail": "rohit@gmail.com",
+      "password": "12345",
+      "cart": [],
+      "mydesigners": [],
+      "isloggedin": false,
+      "wishlist": []
     }
   ],
   "data": [
