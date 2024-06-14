@@ -54,7 +54,8 @@
                   type="text"
                   placeholder="search"
                   style="border: none; margin-bottom: 5px"
-                /><button class="st-button">
+                  id="searchname"
+                /><button id="searchbutton" class="st-button">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </span>
@@ -179,8 +180,7 @@
                 </div>
               </div>
               <div>
-                <a
-                  onclick="event.preventDefault(); redirect('clothing'); displayCards('clothing');"
+                <a onclick="event.preventDefault(); displayCards('clothing')"
                   >clothing</a
                 >
                 <div class="st-content st-clothingDD">
@@ -235,8 +235,7 @@
                 </div>
               </div>
               <div>
-                <a
-                  onclick="event.preventDefault(); redirect('dress'); displayCards('dress');"
+                <a onclick="event.preventDefault(); displayCards('dress')"
                   >dresses</a
                 >
                 <div class="st-content st-dressesDD">
@@ -286,8 +285,7 @@
                 </div>
               </div>
               <div>
-                <a
-                  onclick="event.preventDefault(); redirect('shoes'); displayCards('shoes');"
+                <a onclick="event.preventDefault(); displayCards('shoes')"
                   >shoes</a
                 >
                 <div class="st-content st-shoesDD">
@@ -329,8 +327,7 @@
                 </div>
               </div>
               <div>
-                <a
-                  onclick="event.preventDefault(); redirect('bags'); displayCards('bags');"
+                <a onclick="event.preventDefault(); displayCards('bags')"
                   >bags</a
                 >
                 <div class="st-content st-bagsDD">
@@ -372,8 +369,7 @@
                 </div>
               </div>
               <div>
-                <a
-                  onclick="event.preventDefault(); redirect('accessories'); displayCards('accessories');"
+                <a onclick="event.preventDefault(); displayCards('accessories')"
                   >accessories</a
                 >
                 <div class="st-content st-accessoriesDD">
@@ -409,8 +405,7 @@
                 </div>
               </div>
               <div>
-                <a
-                  onclick="event.preventDefault(); redirect('beauty'); displayCards('beauty');"
+                <a onclick="event.preventDefault(); displayCards('beauty')"
                   >beauty</a
                 >
                 <div class="st-content st-beautyDD">
@@ -455,10 +450,7 @@
                 </div>
               </div>
               <div>
-                <a
-                  onclick="event.preventDefault(); redirect('sale'); displayCards('sale');"
-                  >sale</a
-                >
+                <a onclick="event.preventDefault();">sale</a>
               </div>
               <div>
                 <a href="shops.html">shops</a>
@@ -561,7 +553,7 @@
                 </select>
               </div>
               <div id="newlineunder">
-                <div id="matotalvalue"></div>
+                <div id="newtotalvalue"></div>
                 <select name="" id="sorter" class="newselectdesigner">
                   <option value="">Sort By</option>
                   <option value="high">Sort by price High to Low</option>
@@ -638,5 +630,5 @@
       </footer>
     </div>
   </body>
-  <script src="./js/index.js"></script>
+  <script src="../JavaScript/index.js"></script>
 </html>

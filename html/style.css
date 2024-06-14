@@ -415,6 +415,29 @@ body {
   margin-top: 10px;
 }
 
+.cardstyle {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.cardstyle img {
+  height: 400px;
+  margin: 15px 0px;
+}
+.maptags {
+  margin: 7px;
+}
+.optionfont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* <!-- arnab section end --> */
 
 /* <!-- rakesh footer section start --> */
