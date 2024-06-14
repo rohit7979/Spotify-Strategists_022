@@ -368,6 +368,49 @@ body {
   font-size: 1em;
 }
 
+#newherosection {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+#newcategory {
+  width: max-content;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+#newcontainer {
+  width: 100%;
+}
+.newselectdesigner {
+  border: none;
+  font-size: 16px;
+}
+#newline {
+  display: flex;
+  gap: 12px;
+  border-bottom: 1px solid grey;
+}
+#newh3 {
+  margin-top: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid grey;
+}
+#newcardbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 60px;
+}
+#newlineunder {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
 /* <!-- arnab section end --> */
 
 
