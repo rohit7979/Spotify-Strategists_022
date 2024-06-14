@@ -346,6 +346,8 @@ body {
 #Card3RP {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #Card3RP div {
@@ -354,9 +356,21 @@ body {
   align-items: center;
 }
 
-#Card3RP p {
+#Card3RP img{
+  max-width: 362px;
+  max-height: 458px;
+}
+
+#Card3RP h4{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#Card3RP p{
   text-align: center;
   font-size: 1em;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #newherosection {
@@ -488,5 +502,241 @@ a {
   font-size: 12px;
   color: gray;
 }
+#kendallMain img {
+  margin-bottom: 15px;
+}
+#kendallHeadings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#kendallHeadings > p:nth-child(1) {
+  font-weight: 550;
+  font-size: 33px;
+  margin-bottom: 0px;
+  letter-spacing: 1.5px;
+}
+#kendallHeadings > p:nth-child(2) {
+  font-weight: 800px;
+  font-size: 27px;
+  letter-spacing: 1.5px;
+}
+#ra1 {
+  max-width: 1296px;
+  padding: 13px;
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
 
 /* <!-- rakesh footerd section end -->  */
+
+
+
+/* sign in css */
+#masignin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 0px 100px;
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+#masignin p {
+  font-size: 40px;
+  font-weight: bolder;
+}
+#maforms {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 40px;
+}
+#masignin1 {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  gap: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  gap: 18px;
+}
+
+input {
+  padding: 10px;
+}
+
+#masmall {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#maradios {
+  display: flex;
+  gap: 20px;
+}
+
+#map1,
+#map1 ~ ul {
+  margin: 0px;
+  font-size: 12px;
+}
+#malistul > li {
+  margin-left: -30px;
+  margin-bottom: 5px;
+}
+.mabtn {
+  background-color: black;
+  color: white;
+  padding: 17px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#materms {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.maclr {
+  color: red;
+  text-decoration: underline;
+}
+#mabox {
+  font-size: 13px;
+}
+#mabox2 {
+  display: block;
+  gap: 5px;
+}
+
+/* sign in css end */
+
+/* designer section by Rutvik Start */
+
+#deepMain {
+  margin: 50px 0 50px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#deepSideBar {
+  flex: 2;
+
+  display: flex;
+  flex-direction: column;
+  
+  align-self: flex-start;
+  gap: 10px;
+}
+
+#deepSideBar > a,
+#deepSideBar > h4 {
+  padding-left: 10%;
+}
+
+#deepSideBar > a:hover {
+  text-decoration: underline;
+}
+
+#deepDesigner {
+  flex: 8;
+}
+
+.deepContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.deepContainer > p {
+  flex-basis: calc(33.33% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.deepContainer > p > span {
+  padding-right: 5px;
+}
+/* Designer section by Rutvik End */
+
+/* shops-CSS start */
+
+.st-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 27px;
+  letter-spacing: 1px;
+  margin: 22px 0px 16px;
+  font-weight: 540;
+}
+
+.st-cardContainer {
+  width: 85%;
+  margin: auto;
+  height: auto;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.st-cardContainer > a > div {
+  display: block;
+  flex-direction: column;
+  margin: auto;
+  width: 95%;
+  height: auto;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.st-cardContainer > a > div:hover {
+  opacity: 0.45;
+}
+
+.st-cardContainer > a > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.st-cardContainer > a > div > h4 {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.st-cardContainer > a > div > p {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.st-cardContainer > a > div > p:nth-of-type(2) {
+  margin-bottom: 50px;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+/* shops-CSS :end */
