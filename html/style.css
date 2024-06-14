@@ -11,7 +11,7 @@ body {
 /* <!-- rohit section start --> */
 
 .st-container {
-  max-width: 1600px;
+  max-width: 1296px;
   width: 100%;
   margin: auto;
   align-items: center;
@@ -838,3 +838,113 @@ input {
   border-radius: 8px;
 }
  /* wishlist end */
+
+ /* My Bag Start */
+ #orderplacer {
+  position: relative;
+  left: 1100px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border: 1px solid black;
+  padding: 20px;
+  visibility: hidden;
+}
+.divbox2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: underline;
+}
+.divbox1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  margin-bottom: 20px;
+}
+
+.images {
+  width: 150px;
+}
+#Rmain-bag {
+  max-width: 1296px;
+  
+  margin: auto;
+}
+#Rmain-title {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid ; */
+}
+
+#Rmain-title > h2 {
+  font-family: Arial, sans-serif;
+}
+
+#Rmain-title > div:nth-of-type(2) {
+  margin-top: 1.5%;
+}
+#Rmain-title > div:nth-of-type(2) > a:nth-of-type(2) {
+  /* margin-top: 1.5%; */
+  padding-left: 25px;
+  /* background-color: rebeccapurple; */
+}
+
+#Rmain-title2 {
+  margin-top: 1%;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+#Rmain-title2 {
+  margin-right: 10px;
+}
+
+#Rhr {
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+#Rmain-conatiner {
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid; */
+}
+
+#Rcontainer-2 {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid ; */
+}
+#Rcontainer-2 button {
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  margin-left: 10%;
+  padding: 15px;
+  font-size: 1.2em;
+}
+#Rcontainer-2-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#Rcontainer-2 > div:nth-of-type(3) {
+  width: 100%;
+  font-size: 110%;
+  font-weight: bold;
+  margin-left: 10%;
+}
+
+#Rcontainer-2 > div:nth-of-type(3) img {
+  margin-left: 10%;
+}
+
+#Rcontinue-shopping {
+  display: flex;
+  gap: 20px;
+}
+  /* My Bag End*/
