@@ -160,7 +160,6 @@
       "wishlist": []
     },
     {
-
       "id": "ddc5",
       "usermail": "rohit@gmail.com",
       "password": "12345",
@@ -186,7 +185,15 @@
       "mydesigners": [],
       "isloggedin": false,
       "wishlist": []
-
+    },
+    {
+      "usermail": "rakeshrodda@gmail.com",
+      "password": "1234",
+      "cart": [],
+      "mydesigners": [],
+      "isloggedin": false,
+      "wishlist": [],
+      "id": "xd5GZVX"
     }
   ],
   "data": [
