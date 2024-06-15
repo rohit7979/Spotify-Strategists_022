@@ -18,7 +18,7 @@ body {
   margin-bottom: 20px;
 }
 
-#st-navP1 > div > span {
+#st-navP1>div>span {
   padding: 8px;
   cursor: pointer;
 }
@@ -32,26 +32,26 @@ body {
   border-bottom: 1px solid #e3e3e3;
 }
 
-#st-navP1 > div:nth-of-type(1) span > img {
+#st-navP1>div:nth-of-type(1) span>img {
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
 
-#st-navP1 > div:nth-of-type(1) {
+#st-navP1>div:nth-of-type(1) {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#st-navP1 > div:nth-of-type(2) > span {
+#st-navP1>div:nth-of-type(2)>span {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: Arial, sans-serif;
 }
 
-#st-navP1 > div > span:hover {
+#st-navP1>div>span:hover {
   text-decoration: underline;
 }
 
@@ -62,27 +62,27 @@ body {
   justify-content: space-between;
 }
 
-#st-navP2 > div:nth-of-type(1) > a {
+#st-navP2>div:nth-of-type(1)>a {
   margin: 15px;
   font-size: 14px;
 }
 
-#st-navP2 > div:nth-of-type(1) > a:hover {
+#st-navP2>div:nth-of-type(1)>a:hover {
   text-decoration: underline;
 }
 
-#st-navP2 > div:nth-of-type(3) > a:hover {
+#st-navP2>div:nth-of-type(3)>a:hover {
   text-decoration: underline;
 }
 
-#st-navP2 > div:nth-of-type(2) > a {
+#st-navP2>div:nth-of-type(2)>a {
   font-size: 38px;
   font-weight: 1000;
   cursor: default;
   margin-left: 16rem;
 }
 
-#st-navP2 > div:nth-of-type(3) > a {
+#st-navP2>div:nth-of-type(3)>a {
   margin: 15px;
   display: inline-flex;
   justify-content: center;
@@ -91,7 +91,7 @@ body {
   gap: 5px;
 }
 
-#st-navP2 > div:nth-of-type(3) > span {
+#st-navP2>div:nth-of-type(3)>span {
   margin: 15px;
   display: inline-flex;
   justify-content: center;
@@ -101,7 +101,7 @@ body {
   cursor: pointer;
 }
 
-#st-navP3 > div {
+#st-navP3>div {
   margin-top: 15px;
   margin: 15px;
   display: flex;
@@ -111,29 +111,29 @@ body {
   justify-content: space-between;
 }
 
-#st-navP3 > div > div > a {
+#st-navP3>div>div>a {
   text-transform: uppercase;
   font-family: Arial, sans-serif;
   padding: 10px;
   cursor: pointer;
 }
 
-#st-navP3 > div > div > a:hover {
+#st-navP3>div>div>a:hover {
   text-decoration: underline;
 }
 
-#st-navP3 > div > div > div > div > img:hover {
+#st-navP3>div>div>div>div>img:hover {
   opacity: 0.4;
 }
 
-.st-content > div {
+.st-content>div {
   display: flex;
   margin-top: 5px;
   flex-direction: column;
   padding: 15px;
 }
 
-.st-content > div > span {
+.st-content>div>span {
   margin-bottom: 10px;
   font-size: 13px;
   text-transform: uppercase;
@@ -142,7 +142,7 @@ body {
   padding: 8px;
 }
 
-.st-content > div > a {
+.st-content>div>a {
   padding: 5px;
   text-transform: capitalize;
   font-size: 14px;
@@ -180,7 +180,7 @@ body {
   transform: scale(1.1);
 }
 
-.st-content > div > a:hover {
+.st-content>div>a:hover {
   text-decoration: underline;
 }
 
@@ -237,46 +237,46 @@ body {
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-.st-dropdown > :hover .st-newDD {
+.st-dropdown> :hover .st-newDD {
   display: flex;
 }
 
-.st-dropdown > :hover .st-designersDD {
+.st-dropdown> :hover .st-designersDD {
   display: flex;
 }
 
-.st-dropdown > :hover .st-clothingDD {
+.st-dropdown> :hover .st-clothingDD {
   display: flex;
 }
 
-.st-dropdown > :hover .st-dressesDD {
+.st-dropdown> :hover .st-dressesDD {
   display: flex;
 }
 
-.st-dropdown > :hover .st-shoesDD {
+.st-dropdown> :hover .st-shoesDD {
   display: flex;
 }
 
-.st-dropdown > :hover .st-bagsDD {
+.st-dropdown> :hover .st-bagsDD {
   display: flex;
 }
 
-.st-dropdown > :hover .st-accessoriesDD {
+.st-dropdown> :hover .st-accessoriesDD {
   display: flex;
 }
 
-.st-dropdown > :hover .st-beautyDD {
+.st-dropdown> :hover .st-beautyDD {
   display: flex;
   left: 40%;
   transition: 1s ease;
 }
 
-.st-dropdown > :hover .st-shopsDD {
+.st-dropdown> :hover .st-shopsDD {
   display: flex;
   left: 40%;
 }
 
-.st-dropdown > :hover .st-kendallDD {
+.st-dropdown> :hover .st-kendallDD {
   display: flex;
   left: 55%;
 }
@@ -314,14 +314,17 @@ body {
   padding: 1em;
   gap: 1.2%;
 }
+
 #Card2R img {
   width: 100%;
   height: 100%;
 }
+
 .fahad-img {
   max-width: 362px;
   max-height: 458px;
 }
+
 #rpCard2 div {
   display: flex;
   flex-direction: column;
@@ -384,29 +387,35 @@ body {
   flex-direction: column;
   gap: 7px;
 }
+
 #newcontainer {
   width: 100%;
 }
+
 .newselectdesigner {
   border: none;
   font-size: 16px;
 }
+
 #newline {
   display: flex;
   gap: 12px;
   border-bottom: 1px solid grey;
 }
+
 #newh3 {
   margin-top: 20px;
   padding-bottom: 9px;
   border-bottom: 1px solid grey;
 }
+
 #newcardbox {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
+
 #newlineunder {
   display: flex;
   justify-content: space-between;
@@ -425,13 +434,16 @@ body {
   box-sizing: border-box;
   cursor: pointer;
 }
+
 .cardstyle img {
   height: 350px;
   margin: 15px 0px;
 }
+
 .maptags {
   margin: 7px;
 }
+
 .optionfont {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -449,11 +461,11 @@ body {
   font-family: sans-serif;
 }
 
-#footersection1 > h5:nth-child(1) {
+#footersection1>h5:nth-child(1) {
   font-weight: 500;
 }
 
-#footersection1 > p:nth-child(2) {
+#footersection1>p:nth-child(2) {
   font-size: 13.5px;
 }
 
@@ -479,6 +491,7 @@ body {
   flex-direction: column;
   gap: 7px;
 }
+
 #divsect2 p {
   margin-top: 38px;
 }
@@ -490,6 +503,7 @@ body {
   line-height: 1.5;
   gap: 7px;
 }
+
 #divsect3 p {
   margin-top: 0px;
 }
@@ -524,26 +538,31 @@ a {
   font-size: 12px;
   color: gray;
 }
+
 #kendallMain img {
   margin-bottom: 15px;
 }
+
 #kendallHeadings {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#kendallHeadings > p:nth-child(1) {
+
+#kendallHeadings>p:nth-child(1) {
   font-weight: 550;
   font-size: 33px;
   margin-bottom: 0px;
   letter-spacing: 1.5px;
 }
-#kendallHeadings > p:nth-child(2) {
+
+#kendallHeadings>p:nth-child(2) {
   font-weight: 800px;
   font-size: 27px;
   letter-spacing: 1.5px;
 }
+
 #ra1 {
   max-width: 1296px;
   padding: 13px;
@@ -570,18 +589,21 @@ a {
   font-size: 40px;
   font-weight: bolder;
 }
+
 #maforms {
   display: flex;
   justify-content: center;
   gap: 150px;
   margin-top: 40px;
 }
+
 #masignin1 {
   display: flex;
   flex-direction: column;
   width: 450px;
   gap: 10px;
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -599,20 +621,23 @@ input {
   justify-content: space-between;
   align-items: center;
 }
+
 #maradios {
   display: flex;
   gap: 20px;
 }
 
 #map1,
-#map1 ~ ul {
+#map1~ul {
   margin: 0px;
   font-size: 12px;
 }
-#malistul > li {
+
+#malistul>li {
   margin-left: -30px;
   margin-bottom: 5px;
 }
+
 .mabtn {
   background-color: black;
   color: white;
@@ -631,9 +656,11 @@ input {
   color: red;
   text-decoration: underline;
 }
+
 #mabox {
   font-size: 13px;
 }
+
 #mabox2 {
   display: block;
   gap: 5px;
@@ -659,12 +686,12 @@ input {
   gap: 10px;
 }
 
-#deepSideBar > a,
-#deepSideBar > h4 {
+#deepSideBar>a,
+#deepSideBar>h4 {
   padding-left: 10%;
 }
 
-#deepSideBar > a:hover {
+#deepSideBar>a:hover {
   text-decoration: underline;
 }
 
@@ -677,15 +704,16 @@ input {
   flex-wrap: wrap;
 }
 
-.deepContainer > p {
+.deepContainer>p {
   flex-basis: calc(33.33% - 10px);
   margin: 5px;
   box-sizing: border-box;
 }
 
-.deepContainer > p > span {
+.deepContainer>p>span {
   padding-right: 5px;
 }
+
 /* Designer section by Rutvik End */
 
 /* shops-CSS start */
@@ -711,7 +739,7 @@ input {
   margin-bottom: 20px;
 }
 
-.st-cardContainer > a > div {
+.st-cardContainer>a>div {
   display: block;
   flex-direction: column;
   margin: auto;
@@ -722,17 +750,17 @@ input {
   justify-content: center;
 }
 
-.st-cardContainer > a > div:hover {
+.st-cardContainer>a>div:hover {
   opacity: 0.45;
 }
 
-.st-cardContainer > a > div > img {
+.st-cardContainer>a>div>img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
 
-.st-cardContainer > a > div > h4 {
+.st-cardContainer>a>div>h4 {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
@@ -743,7 +771,7 @@ input {
   padding-left: 10px;
 }
 
-.st-cardContainer > a > div > p {
+.st-cardContainer>a>div>p {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -753,7 +781,7 @@ input {
   padding-left: 10px;
 }
 
-.st-cardContainer > a > div > p:nth-of-type(2) {
+.st-cardContainer>a>div>p:nth-of-type(2) {
   margin-bottom: 50px;
   padding: 5px;
   text-decoration: underline;
@@ -771,14 +799,28 @@ input {
   border-radius: 5px;
   margin: 10px;
 }
+
 .pcardstyle {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 150px;
+  box-shadow: #06182c66 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  margin-bottom: 20px;
 }
-.pcardstyle img {
-  width: 500px;
+
+.imghover1 {
+  width: 300px;
+  overflow: hidden;
+   
+}
+.imghover1 img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: auto;
+}
+.imghover1:hover img {
+  transform: scale(1.2);
 }
 .btn1 {
   background-color: black;
@@ -787,27 +829,37 @@ input {
   width: 300px;
   margin: 5px;
 }
+.btn1:hover{
+  background-color: #839294;
+  color: black;
+}
+
 .btn2 {
   padding: 15px 30px;
   width: 300px;
   margin: 5px;
 }
- /* product display page css end*/
+.btn2:hover{
+  background-color: rgb(188, 181, 173);
+  color: black;
+}
 
- /* wishlist start */
- #st-wishlist {
+/* product display page css end*/
+
+/* wishlist start */
+#st-wishlist {
   width: 100;
   height: 10vh;
   align-items: start;
   background-color: #f5f5f5;
 }
 
-#st-wishlist > div {
+#st-wishlist>div {
   display: flex;
   margin: 20px;
 }
 
-#st-wishlist > div > a {
+#st-wishlist>div>a {
   margin: 12px;
   margin-top: 50px;
   border-radius: 6px;
@@ -819,7 +871,7 @@ input {
   text-align: center;
 }
 
-#st-wishlist > div > a:hover {
+#st-wishlist>div>a:hover {
   background-color: white;
   cursor: pointer;
 }
@@ -838,10 +890,11 @@ input {
   font-weight: 600;
   border-radius: 8px;
 }
- /* wishlist end */
 
- /* My Bag Start */
- #orderplacer {
+/* wishlist end */
+
+/* My Bag Start */
+#orderplacer {
   position: relative;
   left: 1100px;
   display: flex;
@@ -851,12 +904,14 @@ input {
   padding: 20px;
   visibility: hidden;
 }
+
 .divbox2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
   text-decoration: underline;
 }
+
 .divbox1 {
   display: flex;
   justify-content: center;
@@ -868,25 +923,28 @@ input {
 .images {
   width: 150px;
 }
+
 #Rmain-bag {
   max-width: 1296px;
-  
+
   margin: auto;
 }
+
 #Rmain-title {
   display: flex;
   justify-content: space-between;
   /* border: 2px solid ; */
 }
 
-#Rmain-title > h2 {
+#Rmain-title>h2 {
   font-family: Arial, sans-serif;
 }
 
-#Rmain-title > div:nth-of-type(2) {
+#Rmain-title>div:nth-of-type(2) {
   margin-top: 1.5%;
 }
-#Rmain-title > div:nth-of-type(2) > a:nth-of-type(2) {
+
+#Rmain-title>div:nth-of-type(2)>a:nth-of-type(2) {
   /* margin-top: 1.5%; */
   padding-left: 25px;
   /* background-color: rebeccapurple; */
@@ -919,6 +977,7 @@ input {
   flex-direction: column;
   /* border: 2px solid ; */
 }
+
 #Rcontainer-2 button {
   background-color: black;
   color: #fff;
@@ -927,20 +986,21 @@ input {
   padding: 15px;
   font-size: 1.2em;
 }
+
 #Rcontainer-2-child {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-#Rcontainer-2 > div:nth-of-type(3) {
+#Rcontainer-2>div:nth-of-type(3) {
   width: 100%;
   font-size: 110%;
   font-weight: bold;
   margin-left: 10%;
 }
 
-#Rcontainer-2 > div:nth-of-type(3) img {
+#Rcontainer-2>div:nth-of-type(3) img {
   margin-left: 10%;
 }
 
@@ -948,4 +1008,5 @@ input {
   display: flex;
   gap: 20px;
 }
-  /* My Bag End*/
+
+/* My Bag End*/

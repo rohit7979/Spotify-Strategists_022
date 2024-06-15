@@ -13,8 +13,10 @@ function productPageCreater(item) {
   let div = document.createElement('div');
   div.className = 'pcardstyle';
   let div22 = document.createElement('div');
+  let div23 = document.createElement('div');
   let image = document.createElement('img');
   let designer = document.createElement('p');
+  div23.className = "imghover1"
   designer.className = 'maptags';
   let title = document.createElement('p');
   let price = document.createElement('p');
@@ -98,7 +100,8 @@ function productPageCreater(item) {
   });
 
   div22.append(designer, title, price, btn1, btn2);
-  div.append(image, div22);
+  div23.append(image)
+  div.append(div23, div22);
   div2.append(div);
 
   page.append(div2);
