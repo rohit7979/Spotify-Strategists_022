@@ -1,138 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in | Forward</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in | Forward</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="masignin">
+    <p><a href="index.html">FWRD</a></p>
+    <div>
+      <a href="">Need assistance?</a>
+      <a href="">1-866-434-3169 |</a>
+      <a href=""> Live Chat</a>
+    </div>
+  </div>
 
-  <body>
-    <div id="masignin">
-      <p>FWRD</p>
-      <div>
-        <a href="">Need assistance?</a>
-        <a href="">1-866-434-3169 |</a>
-        <a href=""> Live Chat</a>
+  <div id="maforms">
+    <form action="" id="masignin1">
+      <p>SIGN IN TO MY ACCOUNT</p>
+      <label for="signinmail">Email</label>
+      <input type="email" placeholder="email" id="signinmail" required /><br />
+      <label for="signinpass">Password</label>
+      <input type="password" placeholder="password" id="signinpass" required />
+      <div id="masmall">
+        <div style="margin: 10px">
+          <input type="checkbox" id="rememberMe" checked />
+          <label for="rememberMe">Remember me</label>
+        </div>
+        <a href="">Forgot your password?</a>
       </div>
-    </div>
+      <button class="mabtn" id="signin">SIGN IN</button>
+    </form>
 
-    <div id="maforms">
-      <form action="" id="masignin1">
-        <p>SIGN IN TO MY ACCOUNT</p>
-        <input type="email" placeholder="email" id="signinmail" required /><br />
-        <input type="password" placeholder="password" id="signinpass" />
-        <div id="masmall">
-          <div style="margin: 10px">
-            <input type="checkbox" checked /> <label for="">Remember me</label>
-          </div>
-          <a href="">Forgot your password?</a>
-        </div>
-        <button class="mabtn" id="signin">SIGN IN</button>
-      </form>
-      <form action="" id="masignup">
-        <p>CREATE AN ACCOUNT</p>
-        <p id="map1">Creating an account enables you to:</p>
-        <ul id="malistul">
-          <li>Check out faster</li>
-          <li>Keep track of your orders</li>
-          <li>Add favorite items to your wish list</li>
-        </ul>
-        <input type="email" placeholder="email address" id="signupemail" required />
-        <input
-          type="password"
-          placeholder="create password"
-          id="signuppassword1"
-        />
-        <input
-          type="password"
-          placeholder="verify your password"
-          id="signuppassword2"
-        />
-        <div id="mabox2">
-          <input type="checkbox" checked /><label for="" id="mabox">
-            Be the first to know about new arrivals, sales \& promos by
-            submitting your email. You can opt out at any time.<a href=""
-              >privacy policy</a
-            >
-          </label>
-        </div>
-        <div id="maradios">
-          <label for="option1">
-            <input type="radio" name="gender" value="women" id="option1" />
-            Women
-          </label>
-          <label for="option2">
-            <input type="radio" name="gender" value="men" id="option2" />Men
-          </label>
-          <label for="option3">
-            <input type="radio" name="gender" value="both" id="option3" />Both
-          </label>
-        </div>
-        <button class="mabtn" id="signupbtn">AGREE AND CONTINUE</button>
-      </form>
-    </div>
-    <p id="materms">
-      By signing in or clicking "Agree and Continue", you agree to our
-      <a href="" class="maclr">Terms of Service</a>
-      Please also read our <a href="" class="maclr">Privacy Policy</a>
-    </p>
+    <form action="" id="masignup">
+      <p>CREATE AN ACCOUNT</p>
+      <p id="map1">Creating an account enables you to:</p>
+      <ul id="malistul">
+        <li>Check out faster</li>
+        <li>Keep track of your orders</li>
+        <li>Add favorite items to your wish list</li>
+      </ul>
+      <label for="signupemail">Email address</label>
+      <input type="email" placeholder="email address" id="signupemail" required />
+      <label for="signuppassword1">Create password</label>
+      <input type="password" placeholder="create password" id="signuppassword1" required />
+      <label for="signuppassword2">Verify your password</label>
+      <input type="password" placeholder="verify your password" id="signuppassword2" required />
+      <div id="mabox2">
+        <input type="checkbox" id="subscribe" checked />
+        <label for="subscribe" id="mabox">
+          Be the first to know about new arrivals, sales & promos by submitting your email. You can opt out at any time.
+          <a href="">privacy policy</a>
+        </label>
+      </div>
+      <div id="maradios">
+        <label for="option1">
+          <input type="radio" name="gender" value="women" id="option1" required /> Women
+        </label>
+        <label for="option2">
+          <input type="radio" name="gender" value="men" id="option2" required /> Men
+        </label>
+        <label for="option3">
+          <input type="radio" name="gender" value="both" id="option3" required /> Both
+        </label>
+      </div>
+      <button class="mabtn" id="signupbtn">AGREE AND CONTINUE</button>
+    </form>
+  </div>
 
-    <div class="container">
-      <footer>
-        <div id="footersection1">
-          <h5>HELP US IMPROVE</h5>
-          <p>Take a brief survey about today's visit</p>
-          <a href="#">Begin Survey</a>
+  <p id="materms">
+    By signing in or clicking "Agree and Continue", you agree to our
+    <a href="" class="maclr">Terms of Service</a>
+    Please also read our <a href="" class="maclr">Privacy Policy</a>
+  </p>
+
+  <div class="container">
+    <footer>
+      <div id="footersection1">
+        <h5>HELP US IMPROVE</h5>
+        <p>Take a brief survey about today's visit</p>
+        <a href="#">Begin Survey</a>
+      </div>
+      <div id="footersection2">
+        <div id="divsect1">
+          <h5>FWRD</h5>
+          <a href="">About Us</a>
+          <a href="">562-407-3230</a>
+          <a href="">Customer Care</a>
+          <a href="">Track Your Order</a>
+          <a href="">Shipping & Returns</a>
+          <a href="">Live Chat</a>
+          <a href="">Gift Certificates</a>
+          <a href="">Accessibility Statement</a>
         </div>
-        <div id="footersection2">
-          <div id="divsect1">
-            <h5>FWRD</h5>
-            <a href="">About Us</a>
-            <a href="">562-407-3230</a>
-            <a href="">Customer Care</a>
-            <a href="">Track Your Order</a>
-            <a href="">Shipping & Returns</a>
-            <a href="">Live Chat</a>
-            <a href="">Gift Certificates</a>
-            <a href="">Accessibility Statement</a>
-          </div>
-          <div id="divsect2">
-            <p></p>
-            <a href="">Ambassador Program</a>
-            <a href="">Affiliate</a>
-            <a href="">Careers</a>
-            <a href=""> Terms</a>
-            <a href="">Privacy</a>
-            <a href="">CA Privacy Rights</a>
-            <a href="">Your Privacy Choices - CA x</a>
-            <a href="">CA Supply Chains</a>
-            <a href="">Cookie Preferences</a>
-          </div>
-          <div id="divsect3">
-            <h5>NEWSLETTER</h5>
-            <p>Be the first to know about new arrivals, sales & promos by submitting your
-              email. You can opt out at any time.</p>
-            <a href="">privacy policy</a>
-            <input type="text" id="" placeholder="Sign up for our weekly emails">
-          </div>
-          <div id="divsect4">
-            <h5>JOIN US</h5>
-            <a href="">Facebook</a>
-            <a href="">Instagram</a>
-            <a href="">YouTube</a>
-            <a href="">Twitter</a>
-            <a href="">Pinterest</a>
-          </div>
-          <div id="divsect5">
-            <h5>OUR APPS</h5>
-            <a href="">iPhone</a>
-            <a href="">iPad</a>
-          </div>
+        <div id="divsect2">
+          <a href="">Ambassador Program</a>
+          <a href="">Affiliate</a>
+          <a href="">Careers</a>
+          <a href=""> Terms</a>
+          <a href="">Privacy</a>
+          <a href="">CA Privacy Rights</a>
+          <a href="">Your Privacy Choices - CA x</a>
+          <a href="">CA Supply Chains</a>
+          <a href="">Cookie Preferences</a>
         </div>
-        <p id="lastpara">2024 © Eminent, Inc. (a Revolve Group company). All Rights Reserved.</p>
-      </footer>
-    </div>
-  </body>
+        <div id="divsect3">
+          <h5>NEWSLETTER</h5>
+          <p>Be the first to know about new arrivals, sales & promos by submitting your email. You can opt out at any time.</p>
+          <a href="">privacy policy</a>
+          <input type="text" id="newsletterEmail" placeholder="Sign up for our weekly emails">
+        </div>
+        <div id="divsect4">
+          <h5>JOIN US</h5>
+          <a href="">Facebook</a>
+          <a href="">Instagram</a>
+          <a href="">YouTube</a>
+          <a href="">Twitter</a>
+          <a href="">Pinterest</a>
+        </div>
+        <div id="divsect5">
+          <h5>OUR APPS</h5>
+          <a href="">iPhone</a>
+          <a href="">iPad</a>
+        </div>
+      </div>
+      <p id="lastpara">2024 © Eminent, Inc. (a Revolve Group company). All Rights Reserved.</p>
+    </footer>
+  </div>
+
   <script src="../JavaScript/signin.js"></script>
+</body>
 </html>
