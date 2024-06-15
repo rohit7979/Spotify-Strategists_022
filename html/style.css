@@ -404,8 +404,8 @@ body {
 #newcardbox {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  padding: 60px;
 }
 #newlineunder {
   display: flex;
@@ -419,13 +419,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 350px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 10px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .cardstyle img {
-  height: 400px;
+  height: 350px;
   margin: 15px 0px;
 }
 .maptags {
