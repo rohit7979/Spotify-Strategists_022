@@ -913,7 +913,7 @@ input {
 }
 
 .divbox1 {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   gap: 150px;
@@ -953,12 +953,13 @@ input {
 #Rmain-title2 {
   margin-top: 1%;
   display: flex;
-  /* justify-content: space-between; */
+ justify-content: space-between; 
+
+ padding-left:100px;
+ padding-right: 100px;
+ 
 }
 
-#Rmain-title2 {
-  margin-right: 10px;
-}
 
 #Rhr {
   border: 2px solid black;
