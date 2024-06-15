@@ -26,7 +26,7 @@ function productPageCreater(item) {
   image.setAttribute('src', item.image);
   designer.innerText = item.designer;
   title.innerText = item.title;
-  price.innerText = item.price;
+  price.innerText = `₹ ${item.price}`;
 
   let div2 = document.createElement('div');
   let btn1 = document.createElement('button');
