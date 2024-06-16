@@ -14,12 +14,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-
   </head>
 
   <body>
     <div class="container">
-      
       <nav>
         <section class="st-container">
           <div id="st-navP1">
@@ -525,18 +523,18 @@
             <a href="#"> Live Chat</a>
           </div>
         </div>
-  
+
         <div id="Rmain-title2">
-          <p >ITEM</p>
+          <p>ITEM</p>
           <!-- <p style="margin-left: 870px">PRICE</p> -->
           <p>ORDER SUMMARY</p>
         </div>
         <hr id="Rhr" />
-  
+
         <div id="Rmain-conatiner">
           <!-- append the card data here -->
           <div id="Rcontainer-1"></div>
-  
+
           <div id="Rcontainer-2">
             <div id="Rcontainer-2-child">
               <div>
@@ -544,16 +542,22 @@
                 <p>FREE Shipping Options</p>
                 <p>Estimated Total</p>
               </div>
-  
+
               <div>
                 <p id="subtotal">₹0</p>
                 <p>0.00</p>
                 <p id="estimatedtotal">₹0</p>
               </div>
             </div>
-  
+
+            <div class="couponDiv">
+              <input placeholder="Enter coupon" id="coupon" type="text">
+              <button id="couponBtn">
+                <span>ADD</span>
+              </button>
+            </div>
             <div>
-              <button id="btncheckout">PROCEED TO CHECKOUT</button>
+              <button id="btncheckout">Place Order</button>
             </div>
             <div id="international">
               <p>FREE International shipping for orders above 100 RS</p>
@@ -561,17 +565,7 @@
             </div>
           </div>
         </div>
-        <div id="orderplacer">
-          ADDRESS: <input type="text" style="width: 300px" /><br />
-          CARD NUMBER: <input type="text" style="width: 300px" /><br />
-          <div style="display: flex; gap: 20px">
-            EXPIRY DATE: <input type="text" style="width: 120px" /><br />
-            CVV: <input type="text" style="width: 120px" /><br />
-          </div>
-  
-          <button>PLACE ORDER</button>
-        </div>
-  
+
         <div id="Rcontinue-shopping">
           <a href="new.html">Continue shopping</a>
         </div>
@@ -645,5 +639,5 @@
     </div>
   </body>
 
-  <script type="module" src="../JavaScript/bag.js"></script>
+  <script src="../JavaScript/bag.js"></script>
 </html>

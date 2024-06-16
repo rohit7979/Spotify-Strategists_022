@@ -188,6 +188,20 @@
       "wishlist": []
     }
   ],
+  "coupon": [
+    {
+      "coupon": "DISCOUNT50",
+      "discount": 0.5
+    },
+    {
+      "coupon": "DISCOUNT30",
+      "discount": 0.3
+    },
+    {
+      "coupon": "DISCOUNT10",
+      "discount": 0.1
+    }
+  ],
   "data": [
     {
       "id": "1",

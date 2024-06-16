@@ -29,7 +29,7 @@ async function fetchProducts(url) {
     console.log(filtervalue);
     if (filtervalue) {
       displayCards(filtervalue);
-      localStorage.setItem('filtervalue', '');
+      localStorage.setItem("filtervalue", "");
     }
   } catch (error) {
     console.log(error);
@@ -119,6 +119,7 @@ selection.addEventListener("change", (e) => {
   let ans1 = finaldata.filter((ele) => {
     return ele.designer == selection.value;
   });
+  localStorage.setItem("pagearr", JSON.stringify(ans1));
   display(ans1);
 });
 
@@ -130,21 +131,21 @@ sorter1.addEventListener("change", (e) => {
   let val = e.target.value;
   console.log(val);
   if (sorter1.value == "low") {
-    arr.sort((a, b) => {
+    pagearr.sort((a, b) => {
       return a.price - b.price;
     });
 
-    display(arr);
+    display(pagearr);
   } else if (sorter1.value == "high") {
-    arr.sort((a, b) => {
+    pagearr.sort((a, b) => {
       return b.price - a.price;
     });
-    display(arr);
+    display(pagearr);
   } else if (sorter1.value == "designer") {
-    arr.sort((a, b) => {
+    pagearr.sort((a, b) => {
       return a.designer.localeCompare(b.designer);
     });
-    display(arr);
+    display(pagearr);
   }
 });
 
@@ -156,9 +157,6 @@ searchbutton.addEventListener("click", (e) => {
   let value = searchname.value;
   let pagearr = arr;
 
-  console.log(value);
-  console.log(pagearr);
-
   let ans1 = pagearr.filter((ele) => {
     return (
       ele.title.toLowerCase().includes(value) ||
@@ -167,5 +165,27 @@ searchbutton.addEventListener("click", (e) => {
   });
   console.log(ans1);
   display(ans1);
-  searchname.value = "";
+});
+
+let timeout;
+const debounce = (delay) => {
+  let value = searchname.value;
+  if (value.length === 0) {
+    console.log("Inside zero");
+    display(finaldata);
+    return;
+  }
+  if (value.length < 3) {
+    return;
+  }
+  if (timeout) {
+    clearTimeout(timeout);
+  }
+  timeout = setTimeout(() => {
+    searchbutton.click();
+  }, delay);
+};
+
+searchname.addEventListener("input", () => {
+  debounce(2000);
 });
