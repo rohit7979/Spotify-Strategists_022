@@ -37,7 +37,7 @@ function cardCreater(item) {
   image.setAttribute('src', item.image);
   designer.innerText = item.designer;
   title.innerText = item.title;
-  price.innerText = item.price;
+  price.innerText = `₹ ${item.price}`;
   div.append(image, designer, title, price, btn);
   image.addEventListener('click', (e) => {
     e.preventDefault();
