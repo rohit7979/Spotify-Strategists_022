@@ -1,8 +1,17 @@
 let backpage = document.getElementById("backpage");
-
+let user = JSON.parse(localStorage.getItem('user'));
 let page = document.getElementById("ppage");
 let item = JSON.parse(localStorage.getItem("clickeditem"));
 productPageCreater(item);
+
+
+if (user && user.isloggedin) {
+  const status = document.querySelector('#s1');
+  status.textContent = 'Sign Out.';
+} else {
+  const status = document.querySelector('#s1');
+  status.textContent = 'Sign In.';
+}
 
 function redirect(value) {
   localStorage.setItem("filtervalue", value);
