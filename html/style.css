@@ -910,6 +910,7 @@ input {
   flex-direction: column;
   gap: 10px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .divbox1 {
@@ -918,11 +919,21 @@ input {
   align-items: center;
   gap: 150px;
   margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding:50px;
 }
 
 .images {
   width: 150px;
 }
+.images:hover{
+  width:200px;
+}
+
+#btncheckout:hover{
+  color:orange;
+}
+
 
 #Rmain-bag {
   max-width: 1296px;
@@ -958,6 +969,7 @@ input {
   padding-left: 100px;
   padding-right: 100px;
 }
+
 
 #Rhr {
   border: 2px solid black;
