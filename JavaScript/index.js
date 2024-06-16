@@ -27,6 +27,10 @@ async function fetchProducts(url) {
     localStorage.setItem("products", JSON.stringify(data));
 
     console.log(filtervalue);
+    if (filtervalue) {
+      displayCards(filtervalue);
+      localStorage.setItem('filtervalue', '');
+    }
   } catch (error) {
     console.log(error);
   }
@@ -98,12 +102,12 @@ let designers = finaldata.map((item) => {
 });
 let finaldesigners = [...new Set(designers)];
 
-let selection = document.getElementById("selection");
 finaldesigners.sort((a, b) => {
   return a - b;
 });
 
 finaldesigners.forEach((ele) => {
+  let selection = document.getElementById("selection");
   let option = document.createElement("option");
   option.className = "optionfont";
   option.value = ele;

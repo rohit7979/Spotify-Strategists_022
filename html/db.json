@@ -176,6 +176,16 @@
       "mydesigners": [],
       "isloggedin": false,
       "wishlist": []
+    },
+    {
+      "id": "ee86",
+      "usermail": "xyz1@gmail.com",
+      "password": "abcd1234",
+      "gender": "men",
+      "cart": [],
+      "mydesigners": [],
+      "isloggedin": false,
+      "wishlist": []
     }
   ],
   "data": [
