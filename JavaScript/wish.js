@@ -99,3 +99,7 @@ function redirect(value) {
   localStorage.setItem('filtervalue', value);
   window.location.href = 'new.html';
 }
+
+window.addEventListener('load', (e) => {
+  wishlist.click();
+})

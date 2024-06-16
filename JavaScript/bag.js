@@ -1,46 +1,46 @@
-let cart = JSON.parse(localStorage.getItem('user'));
+let cart = JSON.parse(localStorage.getItem("user"));
 if (!cart) {
   cart = { cart: [], wishlist: [] };
 }
 
-let user = JSON.parse(localStorage.getItem('user')) || {};
+let user = JSON.parse(localStorage.getItem("user")) || {};
 if (user && user.isloggedin) {
-  const status = document.querySelector('#s1');
-  status.textContent = 'Sign Out.';
+  const status = document.querySelector("#s1");
+  status.textContent = "Sign Out.";
 } else {
-  const status = document.querySelector('#s1');
-  status.textContent = 'Sign In.';
+  const status = document.querySelector("#s1");
+  status.textContent = "Sign In.";
 }
-let cartcontent = document.getElementById('Rcontainer-1');
+let cartcontent = document.getElementById("Rcontainer-1");
 
 document.getElementById(
-  'count'
+  "count"
 ).innerHTML = `<h5>SHOPPING BAG (${getTotalQuantity(cart.cart)})</h5>`;
 
 function cartcard(item) {
-  let div = document.createElement('div');
-  div.className = 'divbox1';
-  let image = document.createElement('img');
-  image.className = 'images';
-  let title = document.createElement('h4');
-  let a1 = document.createElement('a');
-  let a2 = document.createElement('a');
-  let price = document.createElement('p');
-  let quantityInput = document.createElement('input');
-  let div2 = document.createElement('div');
-  div2.className = 'divbox2';
+  let div = document.createElement("div");
+  div.className = "divbox1";
+  let image = document.createElement("img");
+  image.className = "images";
+  let title = document.createElement("h4");
+  let a1 = document.createElement("a");
+  let a2 = document.createElement("a");
+  let price = document.createElement("p");
+  let quantityInput = document.createElement("input");
+  let div2 = document.createElement("div");
+  div2.className = "divbox2";
 
-  image.setAttribute('src', item.image);
+  image.setAttribute("src", item.image);
   title.innerText = item.title;
-  a1.innerText = 'Move to Wish List';
-  a1.setAttribute('id', 'mwl');
-  a2.setAttribute('id', 'remove');
-  a2.innerText = 'Remove';
-  price.innerText = '₹' + item.price;
-  quantityInput.type = 'number';
+  a1.innerText = "Move to Wish List";
+  a1.setAttribute("id", "mwl");
+  a2.setAttribute("id", "remove");
+  a2.innerText = "Remove";
+  price.innerText = "₹" + item.price;
+  quantityInput.type = "number";
   quantityInput.value = item.quantity || 1;
   quantityInput.min = 1;
-  quantityInput.addEventListener('change', () => {
+  quantityInput.addEventListener("change", () => {
     item.quantity = parseInt(quantityInput.value);
     updateCartQuantity();
   });
@@ -48,11 +48,11 @@ function cartcard(item) {
   div2.append(a1, a2);
   div.append(image, title, div2, price, quantityInput);
 
-  a1.addEventListener('click', () => {
+  a1.addEventListener("click", () => {
     moveItemToWishlist(item);
   });
 
-  a2.addEventListener('click', () => {
+  a2.addEventListener("click", () => {
     removeItemFromCart(item);
   });
 
@@ -71,18 +71,21 @@ function moveItemToWishlist(item) {
 
 function removeItemFromCart(item) {
   cart.cart = cart.cart.filter((item1) => item1.id !== item.id);
-  localStorage.setItem('user', JSON.stringify(cart));
-  updateCartUI();
+  localStorage.setItem("user", JSON.stringify(cart));
+  updateCartUI(1);
   updater(cart);
 }
 
 function updateCartQuantity() {
-  localStorage.setItem('user', JSON.stringify(cart));
-  updateCartUI();
+  localStorage.setItem("user", JSON.stringify(cart));
+  updateCartUI(1);
 }
 
-function updateCartUI() {
-  cartcontent.innerHTML = '';
+let subtotal = document.getElementById("subtotal");
+let estimatedtotal = document.getElementById("estimatedtotal");
+
+function updateCartUI(val) {
+  cartcontent.innerHTML = "";
   let sum = 0;
 
   cart.cart.forEach((element) => {
@@ -90,10 +93,10 @@ function updateCartUI() {
     cartcontent.append(cartcard(element));
   });
 
-  document.getElementById('subtotal').innerText = '₹ ' + sum;
-  document.getElementById('estimatedtotal').innerText = '₹ ' + sum;
+  subtotal.innerText = "₹ " + sum * val;
+  estimatedtotal.innerText = "₹ " + sum * val;
   document.getElementById(
-    'count'
+    "count"
   ).innerHTML = `<h5>SHOPPING BAG (${getTotalQuantity(cart.cart)})</h5>`;
 }
 
@@ -109,19 +112,19 @@ function addItemToCart(item) {
     cart.cart.push(item);
   }
 
-  localStorage.setItem('user', JSON.stringify(cart));
-  updateCartUI();
+  localStorage.setItem("user", JSON.stringify(cart));
+  updateCartUI(1);
   updater(cart);
 }
 
-updateCartUI();
-let btncheckout = document.getElementById('btncheckout');
-btncheckout.addEventListener('click', () => {
+updateCartUI(1);
+let btncheckout = document.getElementById("btncheckout");
+btncheckout.addEventListener("click", () => {
   cart.cart = [];
-  localStorage.setItem('user', JSON.stringify(cart));
-  updateCartUI();
+  localStorage.setItem("user", JSON.stringify(cart));
+  updateCartUI(1);
   updater(cart);
-  alert('Order Placed Sucessfully!');
+  alert("Order Placed Sucessfully!");
 });
 
 async function updater(user1) {
@@ -129,9 +132,9 @@ async function updater(user1) {
     let res = await fetch(
       `https://teesta-argument-014.onrender.com/users/${user1.id}`,
       {
-        method: 'PATCH',
+        method: "PATCH",
         headers: {
-          'Content-type': 'application/json',
+          "Content-type": "application/json",
         },
         body: JSON.stringify(user1),
       }
@@ -139,10 +142,36 @@ async function updater(user1) {
     let data = await res.json();
     console.log(data);
   } catch (error) {
-    console.error('Error:', error);
+    console.error("Error:", error);
   }
 }
 function redirect(value) {
-  localStorage.setItem('filtervalue', value);
-  window.location.href = 'new.html';
+  localStorage.setItem("filtervalue", value);
+  window.location.href = "new.html";
 }
+
+function displayCards(val) {
+  localStorage.setItem("filtervalue", val);
+  window.location.href = "new.html";
+}
+
+let couponBtn = document.getElementById("couponBtn");
+
+couponBtn.addEventListener("click", async () => {
+  try {
+    let couponCode = document.getElementById("coupon").value;
+    let coupons = await fetch("http://localhost:3000/coupon").then((response) =>
+      response.json()
+    );
+    let coupon = coupons.find((item) => couponCode === item.coupon);
+
+    if (coupon) {
+      updateCartUI(coupon.discount);
+      alert(`${coupon.discount*100}% Discount applied`);
+    } else {
+      alert("No coupon found");
+    }
+  } catch (error) {
+    console.log(erro);
+  }
+});

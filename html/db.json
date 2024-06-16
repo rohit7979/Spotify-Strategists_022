@@ -176,6 +176,30 @@
       "mydesigners": [],
       "isloggedin": false,
       "wishlist": []
+    },
+    {
+      "id": "ee86",
+      "usermail": "xyz1@gmail.com",
+      "password": "abcd1234",
+      "gender": "men",
+      "cart": [],
+      "mydesigners": [],
+      "isloggedin": false,
+      "wishlist": []
+    }
+  ],
+  "coupon": [
+    {
+      "coupon": "DISCOUNT50",
+      "discount": 0.5
+    },
+    {
+      "coupon": "DISCOUNT30",
+      "discount": 0.3
+    },
+    {
+      "coupon": "DISCOUNT10",
+      "discount": 0.1
     }
   ],
   "data": [
