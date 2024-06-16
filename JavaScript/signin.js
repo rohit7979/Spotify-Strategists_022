@@ -1,39 +1,41 @@
-document.addEventListener('DOMContentLoaded', () => {
-  let signup = document.getElementById('signupbtn');
+document.addEventListener("DOMContentLoaded", () => {
+  let signup = document.getElementById("signupbtn");
 
-  signup.addEventListener('click', async (e) => {
+  signup.addEventListener("click", async (e) => {
     e.preventDefault();
-    let userid = document.getElementById('signupemail').value.trim();
-    let pass1 = document.getElementById('signuppassword1').value.trim();
-    let cpass = document.getElementById('signuppassword2').value.trim();
-    let getSelectedValue = document.querySelector('input[name="gender"]:checked')?.value;
-    
+    let userid = document.getElementById("signupemail").value.trim();
+    let pass1 = document.getElementById("signuppassword1").value.trim();
+    let cpass = document.getElementById("signuppassword2").value.trim();
+    let getSelectedValue = document.querySelector(
+      'input[name="gender"]:checked'
+    )?.value;
+
     // Email validation regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     // Validation checks
     if (!userid) {
-      alert('Please enter your email address.');
+      alert("Please enter your email address.");
       return;
     }
 
     if (!emailRegex.test(userid)) {
-      alert('Please enter a valid email address.');
+      alert("Please enter a valid email address.");
       return;
     }
 
     if (!pass1 || !cpass) {
-      alert('Please enter and confirm your password.');
+      alert("Please enter and confirm your password.");
       return;
     }
 
     if (pass1 !== cpass) {
-      alert('Passwords do not match.');
+      alert("Passwords do not match.");
       return;
     }
 
     if (!getSelectedValue) {
-      alert('Please select Category.');
+      alert("Please select Category.");
       return;
     }
 
@@ -48,58 +50,58 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
-      let res = await fetch('http://localhost:3000/users', {
-        method: 'POST',
+      let res = await fetch("http://localhost:3000/users", {
+        method: "POST",
         headers: {
-          'Content-type': 'application/json',
+          "Content-type": "application/json",
         },
         body: JSON.stringify(user),
       });
       if (res.ok) {
         let data = await res.json();
-        alert('Sign Up Successful... Please Login!');
+        alert("Sign Up Successful... Please Login!");
       } else {
-        alert('Error signing up. Please try again.');
+        alert("Error signing up. Please try again.");
       }
     } catch (error) {
-      console.error('Error:', error);
-      alert('Error signing up. Please try again.');
+      console.error("Error:", error);
+      alert("Error signing up. Please try again.");
     }
   });
 
-  let signin = document.getElementById('signin');
+  let signin = document.getElementById("signin");
 
-  signin.addEventListener('click', async (e) => {
+  signin.addEventListener("click", async (e) => {
     e.preventDefault();
-    let signinmail = document.getElementById('signinmail').value.trim();
-    let password = document.getElementById('signinpass').value.trim();
+    let signinmail = document.getElementById("signinmail").value.trim();
+    let password = document.getElementById("signinpass").value.trim();
 
     if (!signinmail || !password) {
-      alert('Please enter both email and password.');
+      alert("Please enter both email and password.");
       return;
     }
 
     try {
-      let res = await fetch('http://localhost:3000/users');
-      if (!res.ok) throw new Error('Failed to fetch users.');
+      let res = await fetch("http://localhost:3000/users");
+      if (!res.ok) throw new Error("Failed to fetch users.");
       let data = await res.json();
-      let foundUser = data.find(item => signinmail === item.usermail);
+      let foundUser = data.find((item) => signinmail === item.usermail);
 
       if (foundUser) {
         if (password === foundUser.password) {
-          alert('Login Successful...');
+          alert("Login Successful...");
           foundUser.isloggedin = true;
-          localStorage.setItem('user', JSON.stringify(foundUser));
-          window.location.href = 'index.html';
+          localStorage.setItem("user", JSON.stringify(foundUser));
+          window.location.href = "index.html";
         } else {
-          alert('Enter the correct ID and password!');
+          alert("Enter the correct ID and password!");
         }
       } else {
-        alert('User not found, please create a new account!');
+        alert("User not found, please create a new account!");
       }
     } catch (error) {
-      console.error('Error:', error);
-      alert('Error logging in. Please try again.');
+      console.error("Error:", error);
+      alert("Error logging in. Please try again.");
     }
   });
 });
