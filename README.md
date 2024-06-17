@@ -17,6 +17,7 @@ Fullstack-Web Application
 
 ## Deployed Link
 
+- Fwrd.com :- [Live Demo](https://spotify-strategists-022.netlify.app/)
 
 ## Features
 
@@ -62,11 +63,11 @@ Fullstack-Web Application
 
 Thanks to these wonderful people who have contributed to this project:
 
-- [Rohit Verma](https://github.com/rohit7979)
-- [Arnab Baruah](https://github.com/arnabBaruah009)
-- [Rakesh Rodda](https://github.com/RtoRakesh)
-- [Rutvik Pethe](https://github.com/Rutvik020302)
-- [Syed Fahad Ali](https://github.com/SyedFahadAli1)
+- Team-Lead [Rohit Verma](https://github.com/rohit7979)
+- Collab-1 [Arnab Baruah](https://github.com/arnabBaruah009)
+- Collab-2 [Rakesh Rodda](https://github.com/RtoRakesh)
+- Collab-3 [Rutvik Pethe](https://github.com/Rutvik020302)
+- Collab-4 [Syed Fahad Ali](https://github.com/SyedFahadAli1)
 
 ## Acknowledgments
 
