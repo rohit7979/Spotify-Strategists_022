@@ -23,7 +23,7 @@
         <section class="st-container">
           <div id="st-navP1">
             <div>
-              <span><img src="../images/flag.png" alt="flag image" /></span>
+              <span><img src="./images/flag.png" alt="flag image" /></span>
               <i class="fa-solid fa-grip-lines-vertical"></i>
               <span><strong>EN</strong></span>
               <i class="fa-solid fa-grip-lines-vertical"></i>
@@ -178,7 +178,8 @@
                 </div>
               </div>
               <div>
-                <a onclick="event.preventDefault(); displayCards('clothing')"
+                <a
+                  onclick="event.preventDefault(); redirect('clothing'); displayCards('clothing')"
                   >clothing</a
                 >
                 <div class="st-content st-clothingDD">
@@ -514,13 +515,26 @@
         </section>
       </nav>
 
-      <div id="st-wishlist">
-        <div>
-          <a href="#" value="wishlist" id="wishlist">Wish List</a>
-          <a href="#" value="mydesigners" id="mydesigners">My Designers</a>
+      <main id="deepMain">
+        <!-- rohit section end -->
+        <!-- rahul and pradeep -->
+
+        <div id="deepSideBar">
+          <h4>ALL DESIGNERS</h4>
+          <a href="#">All Designers</a>
+          <a href="#">Clothing</a>
+          <a href="#">Bags</a>
+          <a href="#">Shoes</a>
+          <a href="#">Jewelry</a>
+          <a href="#">Accessories</a>
+          <a href="#">Beauty</a>
+          <a href="#">Home</a>
+          <a href="#">Pre-Owned</a>
         </div>
-      </div>
-      <div id="wishcontainer"></div>
+        <div id="deepDesigner">
+          <h4>ALL DESIGNERS</h4>
+        </div>
+      </main>
 
       <!-- rakesh footer section start -->
 
@@ -590,5 +604,5 @@
     </div>
   </body>
 
-  <script src="../JavaScript/wish.js"></script>
+  <script src="./JavaScript/designer.js"></script>
 </html>
