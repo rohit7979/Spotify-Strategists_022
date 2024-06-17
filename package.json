@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "json-server": "^1.0.0-beta.1"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "spotify-strategists-022",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohit7979/Spotify-Strategists_022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohit7979/Spotify-Strategists_022/issues"
+  },
+  "homepage": "https://github.com/rohit7979/Spotify-Strategists_022#readme"
 }
