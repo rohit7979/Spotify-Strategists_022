@@ -167,10 +167,11 @@ couponBtn.addEventListener("click", async () => {
 
     if (coupon) {
       updateCartUI(coupon.discount);
-      alert(`${coupon.discount*100}% Discount applied`);
+      alert(`${coupon.discount * 100}% Discount applied`);
     } else {
       alert("No coupon found");
     }
+    couponCode.value = "";
   } catch (error) {
     console.log(erro);
   }
