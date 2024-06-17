@@ -45,7 +45,7 @@ function display(data) {
     newcardbox.append(cardCreater(item));
   });
 }
-fetchProducts("http://localhost:3000/data");
+fetchProducts("https://spotify-strategists-022.onrender.com/data");
 
 let newcardbox = document.getElementById("newcardbox");
 
@@ -75,6 +75,7 @@ function redirect(value) {
   window.location.href = "new.html";
 }
 function displayCards(val) {
+  localStorage.setItem("filtervalue", val);
   console.log(val);
   let arr1;
   if (val === "new") {

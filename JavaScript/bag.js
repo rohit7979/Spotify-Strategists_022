@@ -160,14 +160,14 @@ let couponBtn = document.getElementById("couponBtn");
 couponBtn.addEventListener("click", async () => {
   try {
     let couponCode = document.getElementById("coupon").value;
-    let coupons = await fetch("http://localhost:3000/coupon").then((response) =>
-      response.json()
-    );
+    let coupons = await fetch(
+      "https://spotify-strategists-022.onrender.com/coupon"
+    ).then((response) => response.json());
     let coupon = coupons.find((item) => couponCode === item.coupon);
 
     if (coupon) {
       updateCartUI(coupon.discount);
-      alert(`${coupon.discount*100}% Discount applied`);
+      alert(`${coupon.discount * 100}% Discount applied`);
     } else {
       alert("No coupon found");
     }

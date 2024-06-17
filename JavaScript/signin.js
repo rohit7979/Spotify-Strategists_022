@@ -50,13 +50,16 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      let res = await fetch("http://localhost:3000/users", {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify(user),
-      });
+      let res = await fetch(
+        "https://spotify-strategists-022.onrender.com/users",
+        {
+          method: "POST",
+          headers: {
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify(user),
+        }
+      );
       if (res.ok) {
         let data = await res.json();
         alert("Sign Up Successful... Please Login!");
@@ -80,9 +83,12 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Please enter both email and password.");
       return;
     }
+    //spotify-strategists-022.onrender.com
 
-    try {
-      let res = await fetch("http://localhost:3000/users");
+    https: try {
+      let res = await fetch(
+        "https://spotify-strategists-022.onrender.com/users"
+      );
       if (!res.ok) throw new Error("Failed to fetch users.");
       let data = await res.json();
       let foundUser = data.find((item) => signinmail === item.usermail);
