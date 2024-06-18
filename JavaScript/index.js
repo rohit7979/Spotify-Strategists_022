@@ -77,6 +77,7 @@ function redirect(value) {
 function displayCards(val) {
   localStorage.setItem("filtervalue", val);
   console.log(val);
+  console.log(arr);
   let arr1;
   if (val === "new") {
     arr1 = arr.filter((ele) => {
@@ -165,6 +166,7 @@ searchbutton.addEventListener("click", (e) => {
     );
   });
   console.log(ans1);
+  localStorage.setItem("pagearr", JSON.stringify(ans1));
   display(ans1);
 });
 
