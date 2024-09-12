@@ -17,7 +17,7 @@ Fullstack-Web Application
 
 ## Deployed Link
 
-- Fwrd.com :- [Live Demo](https://spotify-strategists-022.netlify.app/)
+- Fwrd.com :- [Live Demo](https://newfwrd.netlify.app/)
 
 ## Features
 
